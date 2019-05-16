@@ -1,23 +1,143 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar mengenai Codding</title>
 
-<div class="home">
+</head>
+<body>
+	<h3 style="
+	font-family: decorative;
+	font-size: 20px;
+	
+	">Ini adalah Tabel</h3>
+	
+	<table border="1"
+		cellpadding="5"
+		width="100%"
+		style="
+			border-collapse: collapse;
+			text-align: center;
+			font-family: verdana;
+			font-size: 15px;
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+		">
+		<thead
+		style="			
+		background-color: Orange;
+		color: Black;
+		">
+			<tr>
+				<th>No</th>
+				<th>Nama</th>
+				<th>Alamat</th>
+				<th>Telp</th>
+				<th>Keterangan</th>
+			</tr>
+		</thead>
+		<tbody
+			style="
+				color: Black;
+				text-align: center;
+				font-family: verdana;
+				font-size: 14px;
+				
+			">
+			<tr>
+				<td>1</td>
+				<td>Johansen</td>
+				<td>Jl.Kegantengan</td>
+				<td>08788231423</td>
+				<td>Mahasiswa</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Miko</td>
+				<td>Jl.Pegangsaan</td>
+				<td>08788253254</td>
+				<td>Pekerja</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Mas Ian</td>
+				<td>Jl.Diponegoro</td>
+				<td>08781236787</td>
+				<td>Pekerja</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Sasu</td>
+				<td>Jl.Panglima</td>
+				<td>08752248948</td>
+				<td>Mahasiswa</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Botak</td>
+				<td>Jl.Kegembelan</td>
+				<td>08788352314</td>
+				<td>Mahasiswa</td>
+			</tr>
+		</tbody>
+	</table>
+		
+	<h3 style="
+	font-family: decorative;
+	font-size: 20px;	
+	
+	">Ini adalah List (Bullet)</h3>
+	<ul style="
+	font-size: 17px;
+	font-family: monospace;
+	font-weight: bold;
+	
+	">
+		<li>Johansen</li>
+		<li>Miko</li>
+		<li>Mas Ian</li>
+		<li>Sasu</li>
+		<li>Botak</li>
+	
+	</ul>
+	
+	<h3 style="
+	font-weight: 20px;
+	font-family: decorative;
+	
+	">Ini adalah Marquee text / Text Bergerak</h3>
+	<marquee scrollamount="12"
+	direction="right"
+	style="font-family: cursive;
+	font-weight: bold;
+	
+	"
+	>Halooo....Terimakasih Sudah Menjumpai Progam HTML Saya.... :D</marquee>
+	
+	<h3>Ini adalah Komponen FORM</h3>
+	<form>
+			<p>
+				<label>Nama Lengkap</label><br>
+				<input type="text" placeholder="Nama lengkap">
+			</p>
+			<p>
+				<label>Nomor Urutan</label><br>
+				<input type="number" placeholder="Nomor urutan">									
+			</p>
+			<p>
+				<label>Silahkan Pilih Alamat Anda</label><br>
+				<select>
+					<option selected disabled>-- Pilih Alamat --</option>
+					<option>Jl.Kegantengan</option>
+					<option>Jl.Pegangsaan</option>
+					<option>Jl.Diponegoro</option>
+					<option>Jl.Panglima</option>
+					<option>Jl.Kegembelan</option>
+				</select>
+			</p>
+			<p>
+				Ini Tombol<br>
+				<button>Tombol Biasa</button>
+				<button onclick="location.reload()">Tombol Refresh</button>
+				<button type="reset">Tombol Reset</button>
+			</p>
+</body>
+</html>
